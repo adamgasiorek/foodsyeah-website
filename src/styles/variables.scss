@@ -1,0 +1,12 @@
+@use '@angular/material' as mat;
+
+
+$foodsyeah-website-primary: mat.define-palette(mat.$green-palette, 700);
+$foodsyeah-website-accent: mat.define-palette(mat.$light-green-palette, 500);
+
+// The warn palette is optional (defaults to red).
+$foodsyeah-website-warn: mat.define-palette(mat.$red-palette);
+
+$foodsyeah-website-grey: rgb(107, 114, 128);
+
+$mobile-breakpoint: 1024px;

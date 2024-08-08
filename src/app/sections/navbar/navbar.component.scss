@@ -1,0 +1,13 @@
+mat-toolbar {
+  position: relative;
+}
+
+.buttons {
+  button:first-of-type {
+    margin-right: 8px;
+  }
+}
+
+img {
+  cursor: pointer;
+}

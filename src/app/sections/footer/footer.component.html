@@ -1,0 +1,25 @@
+<mat-toolbar class="mat-elevation-z1">
+  <mat-toolbar-row class="headline">
+    <img src="assets/logo_black.png" />
+    <span class="spacer"></span>
+    <div class="buttons">
+      <button mat-button [routerLink]="['/', 'terms']">
+        Terms of use
+      </button>
+      <button mat-button [routerLink]="['/', 'terms', 'privacy']">
+        Privacy policy
+      </button>
+    </div>
+  </mat-toolbar-row>
+  <mat-toolbar-row class="texts">
+    <div class="mat-body-1">
+      Foodsyeah - Change your eating habits. <br/> Start making real changes.
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row class="divider-row">
+    <div class="mat-body-2 rights">
+      © 2021 Foodsyeah. All rights reserved
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

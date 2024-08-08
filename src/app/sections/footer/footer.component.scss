@@ -1,0 +1,54 @@
+@import "variables.scss";
+
+:host {
+  padding-top: 10px;
+  display: block;
+  background-color: #F3F4F6;
+
+  > mat-toolbar {
+    padding: 10px 10%;
+    @media (max-width: $mobile-breakpoint) {
+      padding: 0;
+    }
+  }
+}
+
+.buttons {
+  button:first-of-type {
+    margin-right: 8px;
+  }
+
+}
+
+.divider-row {
+  border-top: 1px solid #e1e1e1;
+}
+
+.rights {
+  width: 100%;
+  text-align: center;
+  color: $foodsyeah-website-grey;
+}
+
+.texts {
+  align-items: flex-start;
+  @media (max-width: $mobile-breakpoint) {
+    div {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+button {
+  color: $foodsyeah-website-grey;
+}
+
+.headline {
+  @media (max-width: $mobile-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+}

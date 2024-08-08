@@ -1,0 +1,75 @@
+@import "variables.scss";
+
+:host {
+  background-color: map-get($foodsyeah-website-primary, 700);
+  padding: 72px 10%;
+  display: flex;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+    padding: 16px 10% 72px 10%;
+  }
+
+  .text {
+    flex: 1;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFFFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.25;
+
+    @media (max-width: $mobile-breakpoint) {
+      margin: 0;
+      margin-bottom: 32px;
+      flex: 1 0 375px;
+    }
+
+    .headline {
+      margin-bottom: 16px;
+    }
+
+    .small-text {
+      letter-spacing: 1px;
+    }
+  }
+
+  .image {
+    flex: 1;
+    max-width: 600px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+
+@keyframes loadProgress {
+  0% {
+    width: 0%;
+  }
+  70% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animated-text {
+  position: relative;
+  color: map-get($foodsyeah-website-accent, 500);
+
+  .progressBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: map-get($foodsyeah-website-accent, 500);
+    animation: loadProgress 4s linear infinite;
+  }
+
+}

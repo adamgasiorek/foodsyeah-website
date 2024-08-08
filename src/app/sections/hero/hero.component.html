@@ -1,0 +1,29 @@
+<div class="mat-display-2 text">
+  <div class="headline">
+    <ng-container i18n="@@LANDING.HEADER1">Turn your eating habits into </ng-container>
+    <span class="animated-text">
+        <ng-container *ngIf="indexText === 0" i18n='@@LANDPAGE.HEADER.HEALTHY'>
+          healthy<span class="progressBar "></span>
+        </ng-container>
+        <ng-container *ngIf="indexText === 1" i18n='@@LANDPAGE.HEADER.ECO'>
+          eco<span class="progressBar "></span>
+        </ng-container>
+        <ng-container *ngIf="indexText === 2" i18n='@@LANDPAGE.HEADER.CONSCIOUS'>
+          conscious<span class="progressBar "></span>
+        </ng-container>
+        <ng-container *ngIf="indexText === 3" i18n='@@LANDPAGE.HEADER.ETHIC'>
+          ethic<span class="progressBar "></span>
+        </ng-container>
+        <ng-container *ngIf="indexText === 4" i18n='@@LANDPAGE.HEADER.ECONOMIC'>
+          economic<span class="progressBar"></span>
+        </ng-container>
+      </span>
+    <span i18n="@@LANDPAGE.HEADER1.DIET"> diet</span>
+  </div>
+  <div class="mat-body-2 small-text">
+    An easy and quick way to take control of your targets. Create your meal plan here in seconds.
+  </div>
+</div>
+<div class="image">
+  <img src="assets/illustrations/undraw_eating_together_re_ux62.svg" alt="">
+</div>

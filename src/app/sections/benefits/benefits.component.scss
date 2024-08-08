@@ -1,0 +1,80 @@
+@import "variables.scss";
+
+:host {
+  padding: 72px 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+  }
+
+  mat-card {
+    margin: 16px;
+    flex: 1;
+    padding: 32px;
+
+    &.pink {
+      background-color: #FEF1F2;
+    }
+
+    &.yellow {
+      background-color: #FEFBEB;
+    }
+
+    &.green {
+      background-color: #ECFCF4;
+    }
+
+    mat-card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .mat-body-1 {
+        text-align: center;
+        letter-spacing: 1px;
+        color: $foodsyeah-website-grey;
+      }
+    }
+
+    .card-image {
+      padding: 16px 32px;
+      height: 140px;
+
+      @media (max-width: $mobile-breakpoint) {
+        padding: 16px 0;
+      }
+
+      img {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+  }
+
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    margin: 0;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+}

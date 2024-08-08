@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "foodsyeah-10133": {
+      "hosting": {
+        "foodsyeah-website": [
+          "foodsyeah-10133"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "foodsyeah-10133"
+  }
+}
